@@ -20,18 +20,26 @@ document.addEventListener("DOMContentLoaded", function () {
         '<li><strong>Activa:</strong> She teaches English at the school.</li>' +
         '<li><strong>Pasiva:</strong> English is taught at the school by her.</li>' +
         '</ul></div>';
-    
-          exercisesSection.innerHTML =
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "The cat chases the mouse."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+        exercisesSection.innerHTML =
+        '<div class="section-box"><p>Transforma la oración a voz pasiva: "The cat chases the mouse."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
           break;
 
-      case "pastSimple":
-        examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: Columbus discovered America.</p><p>Pasiva: America was discovered by Columbus.</p></div>';
-        exercisesSection.innerHTML =
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "She wrote a letter."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        break;
-
+          case "pastSimple":
+            introductionSection.innerHTML =
+                '<div class="section-box"><h3>Explicación</h3><p>La voz pasiva en pasado simple se utiliza para expresar acciones completadas en el pasado. En una oración en voz activa, la estructura general es: sujeto + verbo en pasado simple + complemento.</p><p>Para convertir una oración de voz activa a pasiva en pasado simple, se utiliza el verbo auxiliar "to be" en la forma correspondiente al pasado, seguido por el participio pasado del verbo principal. De esta manera, se enfoca en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción, sin cambiar el tiempo verbal original.</p></div>';
+            examplesSection.innerHTML =
+                '<div class="section-box"><ul>' +
+                '<li><strong>Activa:</strong> Columbus discovered America.</li>' +
+                '<li><strong>Pasiva:</strong> America was discovered by Columbus.</li>' +
+                '<li><strong>Activa:</strong> She wrote a letter.</li>' +
+                '<li><strong>Pasiva:</strong> A letter was written by her.</li>' +
+                '<li><strong>Activa:</strong> They built a house last year.</li>' +
+                '<li><strong>Pasiva:</strong> A house was built by them last year.</li>' +
+                '</ul></div>';
+            exercisesSection.innerHTML =
+      '<div class="section-box"><p>Transforma la oración a voz pasiva en pasado simple: "She wrote a letter."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+      break;
+        
       // Ejemplo y ejercicio para Presente Perfecto
       case "presentPerfect":
         examplesSection.innerHTML =
