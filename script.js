@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const timeSelector = document.getElementById("time-selector");
-  const introductionSection = document.getElementById("introduction-section");
   const examplesSection = document.getElementById("examples-section");
   const exercisesSection = document.getElementById("exercises-section");
   const explanationSection = document.getElementById("explanation-section");
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (selectedTime) {
 
       case "presentSimple":
-        introductionSection.innerHTML =
+        explanationSection.innerHTML =
         '<div class="section-box"><h3>Explicación</h3><p>El presente simple en voz activa se utiliza para expresar acciones habituales, hechos generalmente verdaderos o estados permanentes. En una oración en voz activa, sigue la estructura: sujeto + verbo conjugado en tercera persona del singular + complemento.</p><p>Para convertir una oración de voz activa a pasiva, se invierte el orden de las palabras y se utiliza el verbo auxiliar "to be" seguido por el participio pasado del verbo principal. De esta manera, se destaca el objeto o receptor de la acción en lugar de quien realiza la acción, sin cambiar el tiempo verbal original. La voz pasiva es útil cuando queremos enfocarnos en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción.</p></div>';
         examplesSection.innerHTML =
         '<div class="section-box"><ul>' +
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
 
           case "pastSimple":
-            introductionSection.innerHTML =
+            explanationSection.innerHTML =
                 '<div class="section-box"><h3>Explicación</h3><p>La voz pasiva en pasado simple se utiliza para expresar acciones completadas en el pasado. En una oración en voz activa, la estructura general es: sujeto + verbo en pasado simple + complemento.</p><p>Para convertir una oración de voz activa a pasiva en pasado simple, se utiliza el verbo auxiliar "to be" en la forma correspondiente al pasado, seguido por el participio pasado del verbo principal. De esta manera, se enfoca en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción, sin cambiar el tiempo verbal original.</p></div>';
             examplesSection.innerHTML =
                 '<div class="section-box"><ul>' +
