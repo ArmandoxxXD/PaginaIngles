@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const timeSelector = document.getElementById("time-selector");
   const examplesSection = document.getElementById("examples-section");
   const exercisesSection = document.getElementById("exercises-section");
+  const explanationSection = document.getElementById("explanation-section");
+
 
   function updateContent() {
     const selectedTime = timeSelector.value;
@@ -69,20 +71,23 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         break;
 
-      // Presente Continuo
-        case "presentContinuous":
-        examplesSection.innerHTML = 
-          '<div class="section-box"><p>Activa: They are watching a movie.</p><p>Pasiva: A movie is being watched by them.</p></div>';
-        exercisesSection.innerHTML = 
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "The workers are repairing the road."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        break;
+      case "presentContinuous":
+          examplesSection.innerHTML = 
+            '<div class="section-box"><p>Activa: They are watching a movie.</p><br><p>En esta oración, "They" (Ellos) es el sujeto que realiza la acción de ver. La estructura de la oración se centra en quien está realizando la acción.</p><br><p>Pasiva: A movie is being watched by them.</p><br><p>En la versión pasiva, "A movie" (Una película) se convierte en el sujeto de la oración. La acción de ver sigue siendo la misma, pero ahora el enfoque está en la película que está siendo vista, en lugar de en las personas que la ven. La estructura de la oración en voz pasiva en presente continuo generalmente sigue el formato: sujeto pasivo + is/are being + verbo principal en participio pasado + by + sujeto activo (opcional).</p></div>';
+          exercisesSection.innerHTML = 
+            '<div class="section-box"><p>Transforma la oración a voz pasiva: "The workers are repairing the road."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+          explanationSection.innerHTML = 
+            '<div><h1 class="mb-4 text-center" style="color: white;">Explicación</h1><p>En la voz pasiva en presente continuo, se enfoca en una acción que está siendo realizada actualmente. Se utiliza para dar más importancia a la acción que se lleva a cabo o al objeto que recibe la acción, en lugar de quién realiza la acción. Es común en descripciones donde el ejecutante de la acción no es tan relevante como la acción en sí.</p></div>'
+      break;
 
       // Pasado Continuo
       case "pastContinuous":
         examplesSection.innerHTML = 
-          '<div class="section-box"><p>Activa: The chef was cooking the meal.</p><p>Pasiva: The meal was being cooked by the chef.</p></div>';
+          '<div class="section-box"><p>Activa: The chef was cooking the meal.</p><br><p>En esta oración, the chef (el chef) es el sujeto que realiza la acción de cocinar. La estructura de la oración se centra en quien está realizando la acción.</p><br><p>Pasiva: The meal was being cooked by the chef.</p><br><p>En la versión pasiva, the meal (la comida) se convierte en el sujeto de la oración. La acción de cocinar sigue siendo la misma, pero ahora el enfoque está en la comida que está siendo cocinada, en lugar de en el chef que la cocina. La estructura de la oración en voz pasiva en pasado continuo generalmente sigue el formato: sujeto pasivo + was/were being + verbo principal en participio pasado + by + sujeto activo (opcional).</p></div>';
         exercisesSection.innerHTML = 
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The artist was painting a portrait."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+        explanationSection.innerHTML = 
+          '<div> <h1 class="mb-4 text-center" style="color: white;">Explicación</h1> <p>En la voz pasiva en pasado continuo, se describe una acción que estaba siendo realizada por alguien en un momento específico del pasado, pero el enfoque se desplaza del ejecutante de la acción (el sujeto activo) al receptor de la acción (el sujeto pasivo). Este tiempo verbal se utiliza para enfatizar la acción en sí más que quién la realizaba</p></div>'
         break;
     }
 
