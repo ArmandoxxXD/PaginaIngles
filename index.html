@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voz Activa y Pasiva en Inglés</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://bootswatch.com/5/quartz/bootstrap.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <div class="container mt-5">
-    <h1 class="mb-4 text-center">Voz Activa y Pasiva en Inglés</h1>
+    <h1 class="mb-4 text-center" style="color: white;">Voz Activa y Pasiva en Inglés</h1>
     
-    <section class="mb-5">
-        <h2>Elige el Tiempo Verbal</h2>
-        <select id="time-selector" class="custom-select">
+    <div class="form-group">
+      <section class="mb-5">
+        <h2 style="color: white;">Elige el Tiempo Verbal</h2>
+        <select id="time-selector" class="form-select">
           <option value="presentSimple">Presente Simple</option>
           <option value="pastSimple">Pasado Simple</option>
           <option value="presentContinuous">Presente Continuo</option>
@@ -26,9 +27,10 @@
           <option value="modalPerfect">Verbo Modal Perfecto</option>
         </select>
       </section>
+    </div>
 
-    <section id="examples-section" class="mb-5"></section>
-    <section id="exercises-section" class="mb-5"></section>
+    <section id="examples-section" class="mb-5 card bg-secondary"></section>
+    <section id="exercises-section" class="mb-5 card bg-secondary"></section>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
