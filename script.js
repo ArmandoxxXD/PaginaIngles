@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       case "pastSimple":
         examplesSection.innerHTML =
+        '<div class="section-box">hola</p></div>';
+        examplesSection.innerHTML =
           '<div class="section-box"><p>Activa: Columbus discovered America.</p><p>Pasiva: America was discovered by Columbus.</p></div>';
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "She wrote a letter."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
