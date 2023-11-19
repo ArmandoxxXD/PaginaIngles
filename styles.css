@@ -1,33 +1,33 @@
 body {
-    background-color: #e9ecef;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  h1, h2 {
-    color: #495057;
-  }
-  
-  .section-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .section-box p {
-    font-size: 16px;
-    color: #212529;
-  }
-  
-  .section-box input, .section-box select {
-    margin-top: 10px;
-  }
-  
-  .section-box button {
-    margin-top: 10px;
-  }
-  
-  .feedback {
-    margin-top: 10px;
-  }
-  
+  background-color: #e9ecef;
+  font-family: 'Arial', sans-serif;
+}
+
+h1,
+h2 {
+  color: #495057;
+}
+
+.section-box {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-box p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.section-box input,
+.section-box select {
+  margin-top: 10px;
+}
+
+.section-box button {
+  margin-top: 10px;
+}
+
+.feedback {
+  margin-top: 10px;
+}
