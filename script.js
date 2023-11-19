@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const timeSelector = document.getElementById("time-selector");
+  const introductionSection = document.getElementById("introduction-section");
   const examplesSection = document.getElementById("examples-section");
   const exercisesSection = document.getElementById("exercises-section");
 
@@ -8,15 +9,23 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (selectedTime) {
 
       case "presentSimple":
+        introductionSection.innerHTML =
+        '<div class="section-box"><h3>Explicación</h3><p>El presente simple en voz activa se utiliza para expresar acciones habituales, hechos generalmente verdaderos o estados permanentes. En una oración en voz activa, sigue la estructura: sujeto + verbo conjugado en tercera persona del singular + complemento.</p><p>Para convertir una oración de voz activa a pasiva, se invierte el orden de las palabras y se utiliza el verbo auxiliar "to be" seguido por el participio pasado del verbo principal. De esta manera, se destaca el objeto o receptor de la acción en lugar de quien realiza la acción, sin cambiar el tiempo verbal original. La voz pasiva es útil cuando queremos enfocarnos en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción.</p></div>';
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: People speak Spanish in Mexico.</p><p>Pasiva: Spanish is spoken in Mexico.</p></div>';
-        exercisesSection.innerHTML =
+        '<div class="section-box"><ul>' +
+        '<li><strong>Activa:</strong> People speak Spanish in Mexico.</li>' +
+        '<li><strong>Pasiva:</strong> Spanish is spoken in Mexico by people.</li>' +
+        '<li><strong>Activa:</strong> They eat tacos for dinner.</li>' +
+        '<li><strong>Pasiva:</strong> Tacos are eaten for dinner by them.</li>' +
+        '<li><strong>Activa:</strong> She teaches English at the school.</li>' +
+        '<li><strong>Pasiva:</strong> English is taught at the school by her.</li>' +
+        '</ul></div>';
+    
+          exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The cat chases the mouse."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        break;
+          break;
 
       case "pastSimple":
-        examplesSection.innerHTML =
-        '<div class="section-box">hola</p></div>';
         examplesSection.innerHTML =
           '<div class="section-box"><p>Activa: Columbus discovered America.</p><p>Pasiva: America was discovered by Columbus.</p></div>';
         exercisesSection.innerHTML =
