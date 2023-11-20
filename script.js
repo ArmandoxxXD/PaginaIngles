@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const timeSelector = document.getElementById("time-selector");
-  const introductionSection = document.getElementById("introduction-section");
   const examplesSection = document.getElementById("examples-section");
   const exercisesSection = document.getElementById("exercises-section");
   const explanationSection = document.getElementById("explanation-section");
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (selectedTime) {
 
       case "presentSimple":
-        introductionSection.innerHTML =
+        explanationSection.innerHTML =
         '<div class="section-box"><h3>Explicación</h3><p>El presente simple en voz activa se utiliza para expresar acciones habituales, hechos generalmente verdaderos o estados permanentes. En una oración en voz activa, sigue la estructura: sujeto + verbo conjugado en tercera persona del singular + complemento.</p><p>Para convertir una oración de voz activa a pasiva, se invierte el orden de las palabras y se utiliza el verbo auxiliar "to be" seguido por el participio pasado del verbo principal. De esta manera, se destaca el objeto o receptor de la acción en lugar de quien realiza la acción, sin cambiar el tiempo verbal original. La voz pasiva es útil cuando queremos enfocarnos en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción.</p></div>';
         examplesSection.innerHTML =
         '<div class="section-box"><ul>' +
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
 
           case "pastSimple":
-            introductionSection.innerHTML =
+            explanationSection.innerHTML =
                 '<div class="section-box"><h3>Explicación</h3><p>La voz pasiva en pasado simple se utiliza para expresar acciones completadas en el pasado. En una oración en voz activa, la estructura general es: sujeto + verbo en pasado simple + complemento.</p><p>Para convertir una oración de voz activa a pasiva en pasado simple, se utiliza el verbo auxiliar "to be" en la forma correspondiente al pasado, seguido por el participio pasado del verbo principal. De esta manera, se enfoca en lo que se recibe o experimenta, en lugar de la persona o cosa que realiza la acción, sin cambiar el tiempo verbal original.</p></div>';
             examplesSection.innerHTML =
                 '<div class="section-box"><ul>' +
@@ -44,16 +43,24 @@ document.addEventListener("DOMContentLoaded", function () {
         
       // Ejemplo y ejercicio para Presente Perfecto
       case "presentPerfect":
+        explanationSection.innerHTML =
+        '<div class="section-box"><h3>Explicación</h3><p>La voz pasiva en presente perfecto en inglés se forma utilizando el verbo auxiliar "have" en su forma correspondiente (have/has), seguido del participio pasado del verbo principal. La estructura general es la siguiente: Sujeto (agente) + have/has + sido/tenido (participio pasado del verbo principal) + complemento Sujeto (agente) + have/has + sido/tenido (participio pasado del verbo principal) + complemento.</p></div>';
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: She has finished the report.</p><p>Pasiva: The report has been finished by her.</p></div>';
+          '<div class="section-box"><ul>' +
+          '<li><strong>Activa:</strong> They have built a new bridge.</li>' +
+          '<li><strong>Pasiva:</strong> A new bridge has been built by them.</li>';
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The engineers have designed a new bridge."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         break;
 
       // Ejemplo y ejercicio para Pasado Perfecto
       case "pastPerfect":
+        explanationSection.innerHTML =
+        '<div class="section-box"><h3>Explicación</h3><p>La voz pasiva en pasado perfecto se forma utilizando el verbo auxiliar "had been" seguido del participio pasado del verbo principal. La estructura general es la siguiente: Sujeto (al que se realiza la acción) + had been + Participio pasado del verbo principal + por + quien realiza la acción Sujeto (al que se realiza la acción) + had been + Participio pasado del verbo principal + por + quien realiza la acción.</p></div>';
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: The chef had prepared the meal.</p><p>Pasiva: The meal had been prepared by the chef.</p></div>';
+          '<div class="section-box"><ul>' +
+          '<li><strong>Activa:</strong> The chef had cooked a delicious meal.</li>' +
+          '<li><strong>Pasiva:</strong> A delicious meal had been cooked by the chef.</li>';
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The author had written a novel."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         break;
@@ -98,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
           exercisesSection.innerHTML = 
             '<div class="section-box"><p>Transforma la oración a voz pasiva: "The workers are repairing the road."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
           explanationSection.innerHTML = 
-            '<div><h1 class="mb-4 text-center" style="color: white;">Explicación</h1><p>En la voz pasiva en presente continuo, se enfoca en una acción que está siendo realizada actualmente. Se utiliza para dar más importancia a la acción que se lleva a cabo o al objeto que recibe la acción, en lugar de quién realiza la acción. Es común en descripciones donde el ejecutante de la acción no es tan relevante como la acción en sí.</p></div>'
+            '<div class="section-box"><h3>Explicación</h3><p>En la voz pasiva en presente continuo, se enfoca en una acción que está siendo realizada actualmente. Se utiliza para dar más importancia a la acción que se lleva a cabo o al objeto que recibe la acción, en lugar de quién realiza la acción. Es común en descripciones donde el ejecutante de la acción no es tan relevante como la acción en sí.</p></div>'
       break;
 
       // Pasado Continuo
@@ -108,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         exercisesSection.innerHTML = 
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The artist was painting a portrait."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         explanationSection.innerHTML = 
-          '<div> <h1 class="mb-4 text-center" style="color: white;">Explicación</h1> <p>En la voz pasiva en pasado continuo, se describe una acción que estaba siendo realizada por alguien en un momento específico del pasado, pero el enfoque se desplaza del ejecutante de la acción (el sujeto activo) al receptor de la acción (el sujeto pasivo). Este tiempo verbal se utiliza para enfatizar la acción en sí más que quién la realizaba</p></div>'
+          '<div class="section-box"> <h3>Explicación</h3> <p>En la voz pasiva en pasado continuo, se describe una acción que estaba siendo realizada por alguien en un momento específico del pasado, pero el enfoque se desplaza del ejecutante de la acción (el sujeto activo) al receptor de la acción (el sujeto pasivo). Este tiempo verbal se utiliza para enfatizar la acción en sí más que quién la realizaba</p></div>'
         break;
     }
 
