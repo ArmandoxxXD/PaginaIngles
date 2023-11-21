@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The company will launch a new product."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         explanationSection.innerHTML = 
-          '<div class="section-box explanation"> <h1 class="titulo">Futuro Simple</h1> <div class="explanation__cuerpo"> <p> El futuro simple es un tiempo verbal que se utiliza para expresar acciones que ocurrirán en el futuro. En inglés, se forma generalmente utilizando el modal "will" seguido del verbo en su forma base (infinitivo). </p> <p> La voz pasiva en futuro simple se forma utilizando el auxiliar "will" junto con el participio pasado del verbo principal. </p> <p> El futuro simple se usa para hablar sobre eventos o acciones que ocurrirán después del momento presente.  </p> </div>  <div class="structure"> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1"> Objeto </p><p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Depués del objeto se agrega Will be para crear la estructura correcta" id="structure_3"> Will be </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es la acción que se realiza, conjugada en pasado participio" id="structure_4"> Pasado participio </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción" id="structure_5"> Doer </p>  </div> </div>'
+          '<div class="section-box explanation"> <h1 class="titulo">Futuro Simple</h1> <div class="explanation__cuerpo"> <p> El futuro simple es un tiempo verbal que se utiliza para expresar acciones que ocurrirán en el futuro. En inglés, se forma generalmente utilizando el modal "will" seguido del verbo en su forma base (infinitivo). </p> <p> La voz pasiva en futuro simple se forma utilizando el auxiliar "will" junto con el participio pasado del verbo principal. </p> <p> El futuro simple se usa para hablar sobre eventos o acciones que ocurrirán después del momento presente.  </p> </div>  <div class="structure"> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1"> Objeto </p><p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Depués del objeto se agrega Will be para crear la estructura correcta" id="structure_2"> Will be </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es la acción que se realiza, conjugada en pasado participio" id="structure_3"> Pasado participio </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción" id="structure_4"> Doer </p>  </div> </div>'
           cargarElementos();
           agregarLogicaAnimacion(Structure_1);
           agregarLogicaAnimacion(Structure_2);
@@ -98,8 +98,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Ejemplo y ejercicio para Futuro Perfecto
       case "futurePerfect":
+        explanationSection.innerHTML =
+        '<div class="section-box"><h3>Explicación</h3> <p>El futuro perfecto es un tiempo verbal que se utiliza para expresar acciones que estarán completas en el futuro antes de un punto de referencia específico. Puede utilizarse tanto en voz activa como en voz pasiva.</p><h4>Voz Activa</h4><p>En la voz activa, el sujeto realiza la acción. La estructura del futuro perfecto en voz activa es la siguiente:</p><p>Sujeto + will have + participio pasado del verbo</p><h4>Voz Pasiva</h4><p>En la voz pasiva, el sujeto recibe la acción. La estructura del futuro perfecto en voz pasiva es la siguiente:</p><p>Sujeto + will have been + participio pasado del verbo + by + agente </p> </div>';
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: The students will have completed the course by then.</p><p>Pasiva: The course will have been completed by the students by then.</p></div>';
+        '<div class="section-box"><ul>' +
+        '<li><strong>Activa:</strong> She will have written a book.</li>' +
+        '<li><strong>Pasiva:</strong> A book will have been written by her.</li>' +
+        '<li><strong>Activa:</strong> They will have finished the project.</li>' +
+        '<li><strong>Pasiva:</strong> The project will have been finished by them.</li>' +
+        '<li><strong>Activa:</strong> I will have eaten lunch.</li>' +
+        '<li><strong>Pasiva:</strong> Lunch will have been eaten by me.</li>' +
+        '</ul></div>';
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "The scientists will have discovered a new element."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         break;
@@ -107,10 +116,40 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ejemplo y ejercicio para Verbo Modal Perfecto
       case "modalPerfect":
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: They should have informed us about the change.</p><p>Pasiva: We should have been informed about the change by them.</p></div>';
-        exercisesSection.innerHTML =
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        break;
+        '<div class="section-box"><ul>' +
+        '<li><strong>Activa:</strong> They should have informed us about the change.</li>' +
+        '<li><strong>Pasiva:</strong> We should have been informed about the change by them.</li>' +
+        '</ul></div>';
+      exercisesSection.innerHTML =
+        '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+      explanationSection.innerHTML =
+        '<div class="section-box explanation">' + 
+        '<h1 class="titulo">Verbo Modal Perfecto</h1>' + 
+        '<div class="explanation__cuerpo">' +
+        '<p>El Verbo Modal Perfecto combina un verbo modal con "have" y el participio pasado del verbo principal. Se usa para hablar de acciones que se esperaba o debía haber ocurrido en el pasado. Es útil cuando se quiere enfatizar la acción en sí o su resultado, más que el sujeto que realizó la acción.</p>' +
+        '<p>En la voz activa, la estructura es: Sujeto + Verbo Modal + "have" + Participio Pasado. En la voz pasiva, se agrega "been" después de "have", siguiendo la estructura: Sujeto + Verbo Modal + "have been" + Participio Pasado + (opcionalmente) "by" + Agente.</p>' +
+        '<div><h2 class="titulo">Estructura</h2>' + 
+        '<div class="structure">' +
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' + 
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Verbo modal utilizado." id="structure_2">Modal</p>' + 
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar have." id="structure_3">have</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_4">been</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_5">Participio Pasado</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">by Agente</p>' +
+        '</div></div></div></div>';
+      cargarElementos();
+      agregarLogicaAnimacion(structure_1);
+      agregarLogicaAnimacion(structure_2);
+      agregarLogicaAnimacion(structure_3);
+      agregarLogicaAnimacion(structure_4);
+      agregarLogicaAnimacion(structure_5);
+      agregarLogicaAnimacion(structure_6);
+      break;
 
       case "presentContinuous":
           examplesSection.innerHTML = 
@@ -191,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function agregarLogicaAnimacion(elemento) {
+   
     elemento.addEventListener('mouseenter', function () {
       this.style.transform = 'scale(1.2)';
       this.style.margin = '0 0.8em'; // Ajusta el valor según tus necesidades
