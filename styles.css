@@ -32,3 +32,49 @@ h2 {
 .feedback {
   margin-top: 10px;
 }
+
+.explanation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explanation__header {
+
+}
+
+.explanation__cuerpo {
+  width: 80%;
+
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+}
+
+.structure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 2em 0 3em 0;
+}
+
+.structure p {
+  color: white;
+  text-align: center;
+  font-size: 2em !important;
+  font-weight: 600;
+  margin: 0em 0.2em;
+  transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+.structure p:hover {
+  cursor: pointer;
+}
+
+.cursor_normal {
+  cursor: default;
+}
