@@ -116,10 +116,40 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ejemplo y ejercicio para Verbo Modal Perfecto
       case "modalPerfect":
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: They should have informed us about the change.</p><p>Pasiva: We should have been informed about the change by them.</p></div>';
-        exercisesSection.innerHTML =
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        break;
+        '<div class="section-box"><ul>' +
+        '<li><strong>Activa:</strong> They should have informed us about the change.</li>' +
+        '<li><strong>Pasiva:</strong> We should have been informed about the change by them.</li>' +
+        '</ul></div>';
+      exercisesSection.innerHTML =
+        '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+      explanationSection.innerHTML =
+        '<div class="section-box explanation">' + 
+        '<h1 class="titulo">Verbo Modal Perfecto</h1>' + 
+        '<div class="explanation__cuerpo">' +
+        '<p>El Verbo Modal Perfecto combina un verbo modal con "have" y el participio pasado del verbo principal. Se usa para hablar de acciones que se esperaba o debía haber ocurrido en el pasado. Es útil cuando se quiere enfatizar la acción en sí o su resultado, más que el sujeto que realizó la acción.</p>' +
+        '<p>En la voz activa, la estructura es: Sujeto + Verbo Modal + "have" + Participio Pasado. En la voz pasiva, se agrega "been" después de "have", siguiendo la estructura: Sujeto + Verbo Modal + "have been" + Participio Pasado + (opcionalmente) "by" + Agente.</p>' +
+        '<div><h2 class="titulo">Estructura</h2>' + 
+        '<div class="structure">' +
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' + 
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Verbo modal utilizado." id="structure_2">Modal</p>' + 
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar have." id="structure_3">have</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_4">been</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_5">Participio Pasado</p>' +
+        '<p> + </p>' + 
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">by Agente</p>' +
+        '</div></div></div></div>';
+      cargarElementos();
+      agregarLogicaAnimacion(structure_1);
+      agregarLogicaAnimacion(structure_2);
+      agregarLogicaAnimacion(structure_3);
+      agregarLogicaAnimacion(structure_4);
+      agregarLogicaAnimacion(structure_5);
+      agregarLogicaAnimacion(structure_6);
+      break;
 
       case "presentContinuous":
           examplesSection.innerHTML = 
@@ -200,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function agregarLogicaAnimacion(elemento) {
+   
     elemento.addEventListener('mouseenter', function () {
       this.style.transform = 'scale(1.2)';
       this.style.margin = '0 0.8em'; // Ajusta el valor según tus necesidades
