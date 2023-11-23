@@ -162,19 +162,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Ejemplo y ejercicio para Futuro Simple
       case "futureSimple":
+        explanationSection.innerHTML =
+          '<div class="section-box explanation">' +
+          '<h1 class="titulo">Futuro Simple</h1>' +
+          '<div class="explanation__cuerpo">' +
+          '<p>El futuro simple en voz pasiva se utiliza para expresar acciones que ocurrirán en el futuro. En voz activa, la estructura es: sujeto + "will" + verbo en forma base. En voz pasiva, se agrega "be" seguido del participio pasado del verbo, centrándose en el objeto de la acción.</p>' +
+          '<div><h2 class="titulo">Estructura</h2>' +
+          '<div class="structure">' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Objeto</p>' +
+          '<p> + </p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en futuro simple (will be)." id="structure_2">Will be</p>' +
+          '<p> + </p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
+          '<p> + </p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Agente</p>' +
+          '</div></div></div></div>';
         examplesSection.innerHTML =
-          '<div class="section-box"><p>Activa: They will build a new stadium.</p><p>Pasiva: A new stadium will be built by them.</p></div>';
+          '<div class="section-box">' +
+          '<p>Activa: They will build a new stadium.</p>' +
+          '<p>Pasiva: A new stadium will be built by them.</p></div>';
         exercisesSection.innerHTML =
-          '<div class="section-box"><p>Transforma la oración a voz pasiva: "The company will launch a new product."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-        explanationSection.innerHTML = 
-          '<div class="section-box explanation"> <h1 class="titulo">Futuro Simple</h1> <div class="explanation__cuerpo"> <p> El futuro simple es un tiempo verbal que se utiliza para expresar acciones que ocurrirán en el futuro. En inglés, se forma generalmente utilizando el modal "will" seguido del verbo en su forma base (infinitivo). </p> <p> La voz pasiva en futuro simple se forma utilizando el auxiliar "will" junto con el participio pasado del verbo principal. </p> <p> El futuro simple se usa para hablar sobre eventos o acciones que ocurrirán después del momento presente.  </p> </div>  <div class="structure"> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1"> Objeto </p><p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Depués del objeto se agrega Will be para crear la estructura correcta" id="structure_2"> Will be </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es la acción que se realiza, conjugada en pasado participio" id="structure_3"> Pasado participio </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción" id="structure_4"> Doer </p>  </div> </div>'
-          cargarElementos();
-          agregarLogicaAnimacion(Structure_1);
-          agregarLogicaAnimacion(Structure_2);
-          agregarLogicaAnimacion(Structure_3);
-          agregarLogicaAnimacion(Structure_4);
-          agregarLogicaAnimacion(Structure_5);
-          break;
+          '<div class="section-box">' +
+          '<p>Transforma la oración a voz pasiva: "The company will launch a new product."</p>' +
+          '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
+          '<button class="btn btn-primary mt-2">Comprobar</button>' +
+          '<p class="feedback"></p></div>';
+      
+        cargarElementos();
+        agregarLogicaAnimacion(structure_1);
+        agregarLogicaAnimacion(structure_2);
+        agregarLogicaAnimacion(structure_3);
+        agregarLogicaAnimacion(structure_4);
+        break;
+      
 
       // Ejemplo y ejercicio para Verbos Modales
       case "modalVerbs":
