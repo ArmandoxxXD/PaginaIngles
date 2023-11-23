@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
           '</div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             '<p> + </p>' +
             '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
             '<p> + </p>' +
-            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Subject</p>' +
+            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
             '</div></div></div></div>';
           examplesSection.innerHTML =
             '<div class="section-box">' +
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_4">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">Doer</p>' +
           '</div></div></div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
           '</div></div></div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_4">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">Doer</p>' +
           '</div></div></div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         '<p> + </p>' + 
         '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_5">Participio Pasado</p>' +
         '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">By Subject</p>' +
+        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">Doer</p>' +
         '</div></div></div></div>';
       cargarElementos();
       agregarLogicaAnimacion(structure_1);
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
           '</div></div></div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<p> + </p>' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
           '<p> + </p>' +
-          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Subject</p>' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
           '</div></div></div></div>';
         examplesSection.innerHTML =
           '<div class="section-box">' +
