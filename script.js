@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ejemplo y ejercicio para Futuro Perfecto
       case "futurePerfect":
         explanationSection.innerHTML =
-        '<div class="section-box"><h3>Explicación</h3> <p>El futuro perfecto es un tiempo verbal que se utiliza para expresar acciones que estarán completas en el futuro antes de un punto de referencia específico. Puede utilizarse tanto en voz activa como en voz pasiva.</p><h4>Voz Activa</h4><p>En la voz activa, el sujeto realiza la acción. La estructura del futuro perfecto en voz activa es la siguiente:</p><p>Sujeto + will have + participio pasado del verbo</p><h4>Voz Pasiva</h4><p>En la voz pasiva, el sujeto recibe la acción. La estructura del futuro perfecto en voz pasiva es la siguiente:</p><p>Sujeto + will have been + participio pasado del verbo + by + agente </p> </div>';
+        '<div class="section-box"><h3>Explicación</h3> <p>El futuro perfecto es un tiempo verbal que se utiliza para expresar acciones que estarán completas en el futuro antes de un punto de referencia específico. Puede utilizarse tanto en voz activa como en voz pasiva.</p><h4>Voz Activa</h4><p>En la voz activa, el sujeto realiza la acción. La estructura del futuro perfecto en voz activa es la siguiente:</p><p>Sujeto + will have + participio pasado del verbo</p><h4>Voz Pasiva</h4><p>En la voz pasiva, el sujeto recibe la acción. La estructura del futuro perfecto en voz pasiva es la siguiente:</p><p>Sujeto + will have been + participio pasado del verbo + y +subject </p> </div>';
         examplesSection.innerHTML =
         '<div class="section-box"><ul>' +
         '<li><strong>Activa:</strong> She will have written a book.</li>' +
