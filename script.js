@@ -13,74 +13,76 @@ document.addEventListener("DOMContentLoaded", function () {
           '<h1 class="titulo">Presente Simple</h1>' +
           '<div class="explanation__cuerpo">' +
           '<p>El presente simple en voz activa se utiliza para acciones habituales o estados permanentes. La estructura es: sujeto + verbo en tercera persona del singular para afirmaciones o sujeto + do/does + not + verbo base para negaciones. En voz pasiva, se utiliza "is/are" seguido del participio pasado del verbo principal, poniendo énfasis en el objeto de la acción.</p>' +
-          '</div>' +
+          "</div>" +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1">Objeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Se utiliza is/are para formar la voz pasiva." id="structure_2">Is/Are</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
-          '</div></div>';
+          "</div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
           '<h2 class="titulo">Ejemplos</h2>' +
-          '<ul>' +
-          '<li>Activa: People speak Spanish in Mexico.</li>' +
-          '<li>Pasiva: Spanish is spoken in Mexico.</li>' +
-          '</ul></div>';
+          '<h5>Activa</h5>' +
+          '<p>People speak Spanish in Mexico.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>Spanish is spoken in Mexico.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma a voz pasiva: "The cat chases the mouse."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
         agregarLogicaAnimacion(structure_3);
         agregarLogicaAnimacion(structure_4);
         break;
-      
-      
-        case "pastSimple":
-          explanationSection.innerHTML =
-            '<div class="section-box explanation">' +
-            '<h1 class="titulo">Pasado Simple</h1>' +
-            '<div class="explanation__cuerpo">' +
-            '<p>El pasado simple en voz activa se usa para acciones completadas en el pasado. La estructura es: sujeto + verbo en pasado simple + complemento. En voz pasiva, se utiliza "was/were" seguido del participio pasado del verbo principal, enfocándose en el objeto de la acción más que en el sujeto que la realiza.</p>' +
-            '<div><h2 class="titulo">Estructura</h2>' +
-            '<div class="structure">' +
-            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-            '<p> + </p>' +
-            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en pasado (was/were)." id="structure_2">Was/Were</p>' +
-            '<p> + </p>' +
-            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-            '<p> + </p>' +
-            '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
-            '</div></div></div></div>';
-          examplesSection.innerHTML =
-            '<div class="section-box">' +
-            '<ul>' +
-            '<li>Activa: Columbus discovered America.</li>' +
-            '<li>Pasiva: America was discovered by Columbus.</li>' +
-            '</ul></div>';
-          exercisesSection.innerHTML =
-            '<div class="section-box">' +
-            '<p>Transforma la oración a voz pasiva en pasado simple: "She wrote a letter."</p>' +
-            '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
-            '<button class="btn btn-primary mt-2">Comprobar</button>' +
-            '<p class="feedback"></p></div>';
-        
-          cargarElementos();
-          agregarLogicaAnimacion(structure_1);
-          agregarLogicaAnimacion(structure_2);
-          agregarLogicaAnimacion(structure_3);
-          agregarLogicaAnimacion(structure_4);
-          break;
-        
+
+      case "pastSimple":
+        explanationSection.innerHTML =
+          '<div class="section-box explanation">' +
+          '<h1 class="titulo">Pasado Simple</h1>' +
+          '<div class="explanation__cuerpo">' +
+          '<p>El pasado simple en voz activa se usa para acciones completadas en el pasado. La estructura es: sujeto + verbo en pasado simple + complemento. En voz pasiva, se utiliza "was/were" seguido del participio pasado del verbo principal, enfocándose en el objeto de la acción más que en el sujeto que la realiza.</p>' +
+          '<div><h2 class="titulo">Estructura</h2>' +
+          '<div class="structure">' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en pasado (was/were)." id="structure_2">Was/Were</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
+          "</div></div></div></div>";
+        examplesSection.innerHTML =
+          '<div class="section-box">' +
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>Columbus discovered America.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>America was discovered by Columbus.</p>' +
+          '</div>';
+        exercisesSection.innerHTML =
+          '<div class="section-box">' +
+          '<p>Transforma la oración a voz pasiva en pasado simple: "She wrote a letter."</p>' +
+          '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
+          '<button class="btn btn-primary mt-2">Comprobar</button>' +
+          '<p class="feedback"></p></div>';
+
+        cargarElementos();
+        agregarLogicaAnimacion(structure_1);
+        agregarLogicaAnimacion(structure_2);
+        agregarLogicaAnimacion(structure_3);
+        agregarLogicaAnimacion(structure_4);
+        break;
+
       // Ejemplo y ejercicio para Presente Perfecto
       case "presentPerfect":
         explanationSection.innerHTML =
@@ -91,28 +93,30 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva (have/has)." id="structure_2">Have/Has</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_3">Been</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_4">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">Doer</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
-          '<ul>' +
-          '<li><strong>Activa:</strong> They have built a new bridge.</li>' +
-          '<li><strong>Pasiva:</strong> A new bridge has been built by them.</li>' +
-          '</ul></div>';
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>They have built a new bridge.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>A new bridge has been built by them.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The engineers have designed a new bridge."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
@@ -120,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
         agregarLogicaAnimacion(structure_4);
         agregarLogicaAnimacion(structure_5);
         break;
-      
 
       // Ejemplo y ejercicio para Pasado Perfecto
       case "pastPerfect":
@@ -132,33 +135,34 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en pasado perfecto (had been)." id="structure_2">Had been</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
-          '<ul>' +
-          '<li><strong>Activa:</strong> The chef had cooked a delicious meal.</li>' +
-          '<li><strong>Pasiva:</strong> A delicious meal had been cooked by the chef.</li>' +
-          '</ul></div>';
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>The chef had cooked a delicious meal.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>A delicious meal had been cooked by the chef.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The author had written a novel."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
         agregarLogicaAnimacion(structure_3);
         agregarLogicaAnimacion(structure_4);
         break;
-      
 
       // Ejemplo y ejercicio para Futuro Simple
       case "futureSimple":
@@ -170,31 +174,28 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Objeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en futuro simple (will be)." id="structure_2">Will be</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">By Agente</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
-          '<div class="section-box">' +
-          '<p>Activa: They will build a new stadium.</p>' +
-          '<p>Pasiva: A new stadium will be built by them.</p></div>';
+        '<div class="section-box"> <h2 class="titulo"> Ejemplos </h2 class="color: white; text-align: center;"> <h5> Activa </h5> <p>They will build a new stadium.</p> <h5> Pasiva </h5> <p>A new stadium will be built by them.</p></div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The company will launch a new product."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
         agregarLogicaAnimacion(structure_3);
         agregarLogicaAnimacion(structure_4);
         break;
-      
 
       // Ejemplo y ejercicio para Verbos Modales
       case "modalVerbs":
@@ -203,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
         exercisesSection.innerHTML =
           '<div class="section-box"><p>Transforma la oración a voz pasiva: "You can complete the survey."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
         explanationSection.innerHTML =
-          '<div class="section-box explanation" > <h1 class="titulo">Verbos Modales</h1> <div class="explanation__cuerpo"> <p> Los verbos modales son un tipo especial de verbos que se utilizan junto con otros verbos principales para expresar posibilidad, capacidad, obligación, permiso, sugerencia, etc. </p> <p> Para definir los modal verbs o verbos modales, es importante entender que estos no se conjugan con las personas gramaticales (I, we, you, they, she, he, it), es decir que: </p> <ol> <li>Nunca tendrán infinitivo </li> <li> Nunca se usarán en gerundio </li> <li> Nunca tendrán participio </li>  </ol><p>Los modal verbs pueden significar o manifestar desde sugerencias, necesidades, solicitudes, probabilidades, obligaciones, consejos, hasta conceptos  más complejos como “modalidad”; por lo tanto, su significado transforma tanto el contexto como los verbos que se relacionan dentro de una oración. </p> </br> <h3 class="titulo"> Los verbos modales más usados </h3> <ul> <li> Can </li> <li> May </li> <li> Will </li> <li> Must </li> <li> Should </li> <li> Could </li> <li> Might </li> <li> Would </li> <li> Shall </li> <li> Ought to  </li>  </ul> <div><h2 class="titulo">Estructura</h2><div class="structure"> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1"> Objeto </p> <p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es el verbo que seleccionamos" id="structure_2"> Modal </p> <p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Depués del verbo modal se agrega el be para crear la estructura correcta" id="structure_3"> Be </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es la acción que se realiza, conjugada en pasado participio" id="structure_4"> Pasado participio </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción" id="structure_5"> Doer </p>  </div></div> </div> </div>'
+          '<div class="section-box explanation" > <h1 class="titulo">Verbos Modales</h1> <div class="explanation__cuerpo"> <p> Los verbos modales son un tipo especial de verbos que se utilizan junto con otros verbos principales para expresar posibilidad, capacidad, obligación, permiso, sugerencia, etc. </p> <p> Para definir los modal verbs o verbos modales, es importante entender que estos no se conjugan con las personas gramaticales (I, we, you, they, she, he, it), es decir que: </p> <ol> <li>Nunca tendrán infinitivo </li> <li> Nunca se usarán en gerundio </li> <li> Nunca tendrán participio </li>  </ol><p>Los modal verbs pueden significar o manifestar desde sugerencias, necesidades, solicitudes, probabilidades, obligaciones, consejos, hasta conceptos  más complejos como “modalidad”; por lo tanto, su significado transforma tanto el contexto como los verbos que se relacionan dentro de una oración. </p> </br> <h3 class="titulo"> Los verbos modales más usados </h3> <ul> <li> Can </li> <li> May </li> <li> Will </li> <li> Must </li> <li> Should </li> <li> Could </li> <li> Might </li> <li> Would </li> <li> Shall </li> <li> Ought to  </li>  </ul> <div><h2 class="titulo">Estructura</h2><div class="structure"> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción." id="structure_1"> Objeto </p> <p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es el verbo que seleccionamos" id="structure_2"> Modal </p> <p> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Depués del verbo modal se agrega el be para crear la estructura correcta" id="structure_3"> Be </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es la acción que se realiza, conjugada en pasado participio" id="structure_4"> Pasado participio </p> <p class="cursor_normal"> + </p> <p data-bs-toggle="tooltip" data-bs-placement="top" title="Es quien recibe la acción" id="structure_5"> Doer </p>  </div></div> </div> </div>';
         cargarElementos();
         agregarLogicaAnimacion(Structure_1);
         agregarLogicaAnimacion(Structure_2);
@@ -222,32 +223,30 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en futuro perfecto (will have)." id="structure_2">Will have</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_3">Been</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_4">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_5">Doer</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
-          '<ul>' +
-          '<li><strong>Activa:</strong> She will have written a book.</li>' +
-          '<li><strong>Pasiva:</strong> A book will have been written by her.</li>' +
-          '<li><strong>Activa:</strong> They will have finished the project.</li>' +
-          '<li><strong>Pasiva:</strong> The project will have been finished by them.</li>' +
-          '<li><strong>Activa:</strong> I will have eaten lunch.</li>' +
-          '<li><strong>Pasiva:</strong> Lunch will have been eaten by me.</li>' +
-          '</ul></div>';
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>She will have written a book.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>A book will have been written by her.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The scientists will have discovered a new element."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
@@ -255,45 +254,47 @@ document.addEventListener("DOMContentLoaded", function () {
         agregarLogicaAnimacion(structure_4);
         agregarLogicaAnimacion(structure_5);
         break;
-      
 
       // Ejemplo y ejercicio para Verbo Modal Perfecto
       case "modalPerfect":
         examplesSection.innerHTML =
-        '<div class="section-box"><ul>' +
-        '<li><strong>Activa:</strong> They should have informed us about the change.</li>' +
-        '<li><strong>Pasiva:</strong> We should have been informed about the change by them.</li>' +
-        '</ul></div>';
-      exercisesSection.innerHTML =
-        '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
-      explanationSection.innerHTML =
-        '<div class="section-box explanation">' + 
-        '<h1 class="titulo">Verbo Modal Perfecto</h1>' + 
-        '<div class="explanation__cuerpo">' +
-        '<p>El Verbo Modal Perfecto combina un verbo modal con "have" y el participio pasado del verbo principal. Se usa para hablar de acciones que se esperaba o debía haber ocurrido en el pasado. Es útil cuando se quiere enfatizar la acción en sí o su resultado, más que el sujeto que realizó la acción.</p>' +
-        '<p>En la voz activa, la estructura es: Sujeto + Verbo Modal + "have" + Participio Pasado. En la voz pasiva, se agrega "been" después de "have", siguiendo la estructura: Sujeto + Verbo Modal + "have been" + Participio Pasado + (opcionalmente) "by" + Agente.</p>' +
-        '<div><h2 class="titulo">Estructura</h2>' + 
-        '<div class="structure">' +
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' + 
-        '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Verbo modal utilizado." id="structure_2">Modal</p>' + 
-        '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar have." id="structure_3">have</p>' +
-        '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_4">been</p>' +
-        '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_5">Participio Pasado</p>' +
-        '<p> + </p>' + 
-        '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">Doer</p>' +
-        '</div></div></div></div>';
-      cargarElementos();
-      agregarLogicaAnimacion(structure_1);
-      agregarLogicaAnimacion(structure_2);
-      agregarLogicaAnimacion(structure_3);
-      agregarLogicaAnimacion(structure_4);
-      agregarLogicaAnimacion(structure_5);
-      agregarLogicaAnimacion(structure_6);
-      break;
+          '<div class="section-box">' +
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>They should have informed us about the change.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>We should have been informed about the change by them.</p>' +
+          '</div>';
+        exercisesSection.innerHTML =
+          '<div class="section-box"><p>Transforma la oración a voz pasiva: "She must have completed the assignment."</p><input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva"><button class="btn btn-primary mt-2">Comprobar</button><p class="feedback"></p></div>';
+        explanationSection.innerHTML =
+          '<div class="section-box explanation">' +
+          '<h1 class="titulo">Verbo Modal Perfecto</h1>' +
+          '<div class="explanation__cuerpo">' +
+          '<p>El Verbo Modal Perfecto combina un verbo modal con "have" y el participio pasado del verbo principal. Se usa para hablar de acciones que se esperaba o debía haber ocurrido en el pasado. Es útil cuando se quiere enfatizar la acción en sí o su resultado, más que el sujeto que realizó la acción.</p>' +
+          '<p>En la voz activa, la estructura es: Sujeto + Verbo Modal + "have" + Participio Pasado. En la voz pasiva, se agrega "been" después de "have", siguiendo la estructura: Sujeto + Verbo Modal + "have been" + Participio Pasado + (opcionalmente) "by" + Agente.</p>' +
+          '<div><h2 class="titulo">Estructura</h2>' +
+          '<div class="structure">' +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Verbo modal utilizado." id="structure_2">Modal</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar have." id="structure_3">have</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Parte del auxiliar been para voz pasiva." id="structure_4">been</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_5">Participio Pasado</p>' +
+          "<p> + </p>" +
+          '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_6">Doer</p>' +
+          "</div></div></div></div>";
+        cargarElementos();
+        agregarLogicaAnimacion(structure_1);
+        agregarLogicaAnimacion(structure_2);
+        agregarLogicaAnimacion(structure_3);
+        agregarLogicaAnimacion(structure_4);
+        agregarLogicaAnimacion(structure_5);
+        agregarLogicaAnimacion(structure_6);
+        break;
 
       case "presentContinuous":
         explanationSection.innerHTML =
@@ -304,31 +305,34 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en presente continuo (is/are being)." id="structure_2">Is/Are being</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
-          '<p>Activa: They are watching a movie.</p><br>' +
-          '<p>Pasiva: A movie is being watched by them.</p></div>';
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>They are watching a movie.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>A movie is being watched by them.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The workers are repairing the road."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
         agregarLogicaAnimacion(structure_3);
         agregarLogicaAnimacion(structure_4);
         break;
-      
 
       // Pasado Continuo
       case "pastContinuous":
@@ -340,31 +344,34 @@ document.addEventListener("DOMContentLoaded", function () {
           '<div><h2 class="titulo">Estructura</h2>' +
           '<div class="structure">' +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Sujeto que recibe la acción." id="structure_1">Sujeto</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Auxiliar para la voz pasiva en pasado continuo (was/were being)." id="structure_2">Was/Were being</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Participio pasado del verbo principal." id="structure_3">Participio Pasado</p>' +
-          '<p> + </p>' +
+          "<p> + </p>" +
           '<p data-bs-toggle="tooltip" data-bs-placement="top" title="Agente de la acción (opcional)." id="structure_4">Doer</p>' +
-          '</div></div></div></div>';
+          "</div></div></div></div>";
         examplesSection.innerHTML =
           '<div class="section-box">' +
-          '<p>Activa: The chef was cooking the meal.</p><br>' +
-          '<p>Pasiva: The meal was being cooked by the chef.</p></div>';
+          '<h2 class="titulo">Ejemplos</h2>' +
+          '<h5>Activa</h5>' +
+          '<p>The chef was cooking the meal.</p>' +
+          '<h5>Pasiva</h5>' +
+          '<p>The meal was being cooked by the chef.</p>' +
+          '</div>';
         exercisesSection.innerHTML =
           '<div class="section-box">' +
           '<p>Transforma la oración a voz pasiva: "The artist was painting a portrait."</p>' +
           '<input type="text" class="form-control" placeholder="Escribe la oración en voz pasiva">' +
           '<button class="btn btn-primary mt-2">Comprobar</button>' +
           '<p class="feedback"></p></div>';
-      
+
         cargarElementos();
         agregarLogicaAnimacion(structure_1);
         agregarLogicaAnimacion(structure_2);
         agregarLogicaAnimacion(structure_3);
         agregarLogicaAnimacion(structure_4);
         break;
-      
     }
 
     document.querySelectorAll(".section-box button").forEach((button) => {
